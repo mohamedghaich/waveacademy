@@ -1,0 +1,148 @@
+section{
+   /* background-color: rgb(14, 14, 14); */
+   /* background-image: url(../../../assets/back.jpeg); */
+   background-size: cover;
+   color: rgb(233, 233, 233);
+   padding: 0 5%;
+   background: linear-gradient(to top, rgba(14, 14, 14, 1) 0.001%, rgba(14, 14, 14, 0)99%);
+}
+.master{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+.img{
+    width: 0%;
+    background-size: cover;
+    background-position: center;
+    width: 412px;
+    height: 454px;
+    border-radius: 17px;
+}
+img{
+
+    height: 90%;
+    mix-blend-mode: color-burn;
+    border-radius: 15px;
+    /* opacity: 0.6; */
+    /* filter: drop-shadow(5px 10px 10px #ffffffc5); */
+    
+}
+
+.home{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    height: 454px;
+}
+h4{
+    font-size: 24px;
+}
+h1{
+    font-size: 100px;
+}
+h1,h2,h3,h4{
+    font-family: El Messiri;
+}
+.green{
+    color: #CB9807;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 1% 3%;
+    gap: 20px;
+}
+.button button{
+    border: #CB9807 solid 2px;
+    height: 90%;
+    width: 40%;
+    padding: 3% 2%;
+    font-size: 24PX;
+    border-radius: 10PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.B1{
+    background-color: transparent;
+    color: #CB9807;
+}
+.B1:hover{
+    background-color: #CB9807;
+    color: rgb(233, 233, 233);
+}
+.B2{
+    background-color: #CB9807;
+    color: rgb(233, 233, 233);
+}
+.B2:hover{
+    background-color: transparent;
+    color: #CB9807;
+}
+
+.first{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+
+}
+@media (max-width: 1400px) {
+    .img {
+        width: 312px;
+        height: 354px;
+    }
+    img{
+    height: 300px;
+    }
+  }
+  @media (max-width: 1205px) {
+    .master{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+    .img {
+        width: 90vw;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        height: 90%;
+    }
+  }
+  @media (max-width: 650px) {
+    .img{
+        height: 50vh;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 70px;
+    }
+  }
+  @media (max-width: 500px) {
+    .img{
+        height: 38vh;
+    }
+    h4{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 45px;
+    }
+  }
+  

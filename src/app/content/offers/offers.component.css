@@ -1,0 +1,81 @@
+section{
+    background-color: rgb(14, 14, 14);
+    color: rgb(233, 233, 233);
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 70PX;
+    justify-content: center;
+    align-items: center;
+ }
+ .card{
+    display: flex;
+    justify-content: center;
+    gap: 30PX;
+    align-items: start;
+    padding-bottom: 30px;
+
+ }
+ .card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+ }
+ .card div h3{
+    font-size: 30px;
+    color: #CB9807;
+ }
+ .card div>div{
+    font-size: 20px;
+    color: rgb(170, 170, 170);
+    width: 250px;
+    line-height: 2;
+ }
+ ul{
+   text-align: right;
+   direction: rtl;
+ }
+ .more{
+   visibility: hidden;
+   max-height: 0px;
+   transition: 1s;
+   transform: translateY(-80%);
+   opacity: 0;
+ }
+ .active{
+   visibility: visible;
+   max-height: 1000px;
+   transform: translateY(0%);
+   opacity: 1;
+
+ }
+ .moreb{
+   cursor: pointer;
+ }
+img{
+   background-color: #FFFFFF;
+    height: 260px;
+    width: 300px;
+    object-fit: contain;
+    box-shadow: 0 0 10px 0px #FFFFFF;
+    border-radius: 15px;
+}
+h1,h2,h3,h4{
+   font-family: El Messiri;
+}
+h1{
+    font-size: 60px;
+}
+@media (max-width: 1050px){
+   .card{
+      flex-direction: column;
+   }
+}
+@media (max-width: 750px){
+   h1{
+      font-size: 27px;
+  }
+}

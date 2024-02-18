@@ -1,0 +1,18 @@
+footer{
+    background-color: rgb(14, 14, 14);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ul{
+    color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 5%;
+}
+img{
+    height: 130px;
+}
