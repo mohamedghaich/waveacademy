@@ -9,11 +9,11 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class EquiqeComponent {
   images: string[] = [
-    '../../../assets/tele1.jpg',
-    '../../../assets/tele2.jpg',
-    '../../../assets/tele3.jpg',
-    '../../../assets/tele4.jpg',
-    '../../../assets/tele5.jpg'
+    'https://mohamedghaich.github.io/waveacademy/assets/tele1.jpg',
+    'https://mohamedghaich.github.io/waveacademy/assets/tele2.jpg',
+    'https://mohamedghaich.github.io/waveacademy/assets/tele3.jpg',
+    'https://mohamedghaich.github.io/waveacademy/assets/tele4.jpg',
+    'https://mohamedghaich.github.io/waveacademy/assets/tele5.jpg'
   ];
   currentIndex = 0;
   slideWidth!: number;
