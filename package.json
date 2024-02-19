@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --base-href /waveacademy/",
-    "postbuild": "move .\\docs\\browser\\* .\\docs && rmdir /s /q .\\docs\\browser && echo Post-build process completed!",
+    "postbuild": "xcopy /s /e /y .\\docs\\browser\\* .\\docs && rmdir /s /q .\\docs\\browser && echo Post-build process completed!",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
