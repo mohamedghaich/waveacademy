@@ -7,8 +7,9 @@
 
 body{
     font-family: El Messiri;
-    overflow-x: hidden;
+    overflow-x: clip;
     position: relative;
+    max-width: 100vw;
     /* background-image: url(assets/back.jpg); */
     background-size: 100vw 90vh;
     background-repeat: no-repeat;
