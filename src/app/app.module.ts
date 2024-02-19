@@ -12,7 +12,6 @@ import { FaqComponent } from './content/faq/faq.component';
 import { EquiqeComponent } from './content/equiqe/equiqe.component';
 import { TelegrameComponent } from './content/telegrame/telegrame.component';
 import { InscriptionComponent } from './content/inscription/inscription.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -34,10 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatDialogModule
   ],
-  providers: [
-    provideClientHydration(),
-    provideAnimationsAsync()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
