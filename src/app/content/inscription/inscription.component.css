@@ -1,15 +1,18 @@
 section{
     background-color: #191919;
     color: rgb(233, 233, 233);
-    padding: 1% 5%;
-    padding: 6%;
+    padding: 6% ;
     display: flex;
     flex-direction: column;
     gap: 30PX;
+    height: 20VH;
     justify-content: center;
     align-items: center;
  }
- button{
+ a{
+   height: 100PX;
+   text-decoration: none;
+   color: white;
     background-color: #CB9807;
     color: #191919;
     border: #CB9807 2px solid;
@@ -17,8 +20,25 @@ section{
     font-size: 5VW;
     padding: 0;
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
  }
- button:hover{
+ a:hover{
    background-color: transparent;
    color: #CB9807;
+}
+a{
+   transition: 0.5s;
+   cursor: pointer;
+}
+a:hover{
+   transform: translateY(-10%);
+}
+@media (max-width:800PX) {
+   a{
+      height: 50px;
+   }
+   
 }

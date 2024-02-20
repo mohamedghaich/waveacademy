@@ -36,7 +36,7 @@ ul>li{
     justify-content:right;
     align-items: center;
 }
-button{
+.abb{
     border:white 2px solid;
     color: white;
     border-radius: 10px;
@@ -44,13 +44,23 @@ button{
     font-size: 18px;
     width: 70%;
     height: 100%;
-    padding: 5% 3%;
+    padding: 6% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-button:hover{
+.abb:hover{
         background-color: #CB9807;
         color: rgb(233, 233, 233);
         border:#CB9807 2px solid;
 }
+.abb{
+    transition: 0.5s;
+    cursor: pointer;
+ }
+ .abb:hover{
+    transform: translateY(-10%);
+ }
 img{
    height: 100px;
 }
@@ -63,16 +73,17 @@ img{
         width: 26vw;
         font-size: 12px;
     }
-    button{
+    .abb{
        
         font-size: 12px;    
     }
 }
+
 @media (max-width: 300px){
     #menu li{
         font-size: 10px;
     }
-    button{
+    .abb{
        
         font-size: 9px;    
     }
