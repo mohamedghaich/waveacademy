@@ -145,6 +145,7 @@ a{
     }
     .home{
         text-align: center ;
+        padding: 0 10PX;
     }
     .button{
         justify-content: center;
