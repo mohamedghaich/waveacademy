@@ -1,1 +1,9 @@
-<p>telegrame works!</p>
+<div class="popup-overlay" (click)="closePopup()">
+    
+    <div class="popup-container" (click)="$event.stopPropagation()">
+        <span mat-button (click)="closePopup()">x</span>
+      <img [src]="selectedImage" [alt]="selectedImage">
+      
+    </div>
+  </div>
+  

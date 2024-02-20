@@ -13,6 +13,69 @@ ul{
     list-style: none;
     padding: 0 5%;
 }
+
 img{
     height: 130px;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 10px;
+  }
+  
+  .container .social {
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+  }
+  
+  .container .social:nth-child(1):hover {
+    background-color: #c131ae;
+  }
+  
+  .container .social:nth-child(2):hover {
+    background-color: #cd242b;
+  }
+  
+  .container .social:nth-child(3):hover {
+    background-color: #55acee;
+  }
+  
+  .title {
+    color: gray;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+
+  @media (max-width: 750px) {
+    ul{
+        flex-direction: column;
+    }
+    ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80px;
+    }
+  }
+    

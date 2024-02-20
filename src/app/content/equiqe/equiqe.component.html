@@ -1,17 +1,14 @@
 <section>
-    <h1> قوة التحليل الموجي </h1>
-    <div class="master">
-        <button class="prev" (click)="prevSlide()">&#10094;</button>
-        <div class="slider-container">
-            <div class="slider" [style.transform]="'translateX(' + (-currentIndex * slideWidth) + '%' + ')'">
-              <div class="slide" *ngFor="let image of images">
-                <img [src]="image" [alt]="image">
-              </div>
-            </div>
-          </div>
-          <button class="next" (click)="nextSlide()">&#10095;</button>
+  <h1> قوة التحليل الموجي </h1>
+  <div class="master">
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <div class="slider-container">
+      <div class="slider" [style.transform]="'translateX(' + (-currentIndex * slideWidth) + '%' + ')'">
+        <div class="slide" *ngFor="let image of images" (click)="openPopup(image)">
+          <img [src]="image" [alt]="image">
+        </div>        
+      </div>
     </div>
-
-      
-      
+    <button class="next" (click)="nextSlide()">&#10095;</button>
+  </div>
 </section>

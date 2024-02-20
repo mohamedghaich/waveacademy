@@ -71,7 +71,7 @@ h1{
 }
 @media (max-width: 1050px){
    .card{
-      flex-direction: column;
+      flex-direction: column-reverse;
    }
 }
 @media (max-width: 750px){

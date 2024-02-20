@@ -1,11 +1,12 @@
 import { Component, HostListener, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-
+import { MatDialog } from '@angular/material/dialog';
+import { TelegrameComponent } from '../telegrame/telegrame.component';
 
 @Component({
   selector: 'app-equiqe',
   templateUrl: './equiqe.component.html',
-  styleUrl: './equiqe.component.css'
+  styleUrls: ['./equiqe.component.css']
 })
 export class EquiqeComponent {
   images: string[] = [
@@ -18,20 +19,33 @@ export class EquiqeComponent {
   currentIndex = 0;
   slideWidth!: number;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    this.calculateSlideWidth(); 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private dialog: MatDialog) {
+    this.calculateSlideWidth();
   }
+openPopup(image: string): void {
+  const dialogRef = this.dialog.open(TelegrameComponent, {
+    width: 'auto',
+    data: { selectedImage: image }
+  });
+}
+
+closePopup(): void {
+  this.dialog.closeAll();
+}
 
   @HostListener('window:resize')
   onResize() {
     this.calculateSlideWidth();
   }
+
   calculateSlideWidth() {
     if (isPlatformBrowser(this.platformId)) {
-      if (window.innerWidth <= 1050) {
-        this.slideWidth = 80;
+      if (window.innerWidth >= 1100) {
+        this.slideWidth = 33.33;
+      } else if (window.innerWidth >= 800) {
+        this.slideWidth = 50;
       } else {
-        this.slideWidth = 33.33; 
+        this.slideWidth = 100;
       }
     }
   }
