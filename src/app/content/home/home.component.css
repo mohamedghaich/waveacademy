@@ -1,10 +1,7 @@
 section{
-   /* background-color: rgb(14, 14, 14); */
-   /* background-image: url(assets/back.jpeg); */
-   background-size: cover;
    color: rgb(233, 233, 233);
    padding: 0 5%;
-   background: linear-gradient(to top, rgb(14, 14, 14) 15%, rgba(14, 14, 14, 0)80%);
+   max-width: 100vw;
 }
 .master{
     display: flex;
@@ -18,7 +15,6 @@ section{
     background-position: center;
     display: flex;
     justify-content: center;
-    /* width: 100%; */
     height: 100%;
     border-radius: 17px;
 }
@@ -103,14 +99,6 @@ a{
  a:hover{
     transform: translateY(-10%);
  }
-.B1{
-    background-color: transparent;
-    color: #CB9807;
-}
-.B1:hover{
-    background-color: #CB9807;
-    color: rgb(233, 233, 233);
-}
 .B2{
     background-color: #CB9807;
     color: rgb(233, 233, 233);
@@ -127,15 +115,6 @@ a{
     gap: 10px;
 
 }
-@media (max-width: 1400px) {
-    /* .img {
-        width: 312px;
-        height: 354px;
-    }
-    img{
-    height: 300px;
-    } */
-  }
   @media (max-width: 1205px) {
     .ball{
         width: 50%;

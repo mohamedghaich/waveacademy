@@ -8,6 +8,7 @@ section{
     gap: 30PX;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
  }
  h1{
     font-size: 60px;

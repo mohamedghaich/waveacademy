@@ -8,6 +8,7 @@ section{
     height: 20VH;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
  }
  a{
    height: 100PX;
