@@ -41,11 +41,11 @@ closePopup(): void {
   calculateSlideWidth() {
     if (isPlatformBrowser(this.platformId)) {
       if (window.innerWidth >= 1100) {
-        this.slideWidth = 33.33;
+        this.slideWidth = 37;
       } else if (window.innerWidth >= 800) {
-        this.slideWidth = 50;
+        this.slideWidth = 55;
       } else {
-        this.slideWidth = 100;
+        this.slideWidth = 103;
       }
     }
   }

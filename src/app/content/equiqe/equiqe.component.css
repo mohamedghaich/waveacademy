@@ -19,24 +19,14 @@ h1 {
   max-width: 70vw;
   max-height: 90vh;
   margin: 0 auto;
-  padding: 5%;
   overflow: clip;
-}
-
-.slider {
-  display: flex;
-  gap: 40PX;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  flex: 0 0 33.33%; /* Display 3 slides per row by default */
+  padding: 0;
 }
 
 .slide img {
   max-width: 60vw;
-  height: 70vh;
-  border-radius: 10px;
+  height: 90%;
+  border-radius: 15px;
 }
 
 button {
@@ -83,26 +73,41 @@ h4 {
 }
 .slider {
   display: flex;
-  gap: 40px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
   transition: transform 0.5s ease;
 }
 
 .slide {
-  flex: 0 0 calc(33.33% - 26.67px); /* Adjust for gap */
+  max-width: 50VW;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 calc(33.33%);
+  padding: 2%; /* Adjust for gap */
 }
+/* .slide:nth-child(1){
+  margin-left: 80PX;
+} */
 @media (max-width: 750px){
   h1{
      font-size: 27px;
  }
 }
-@media (max-width: 1100px) and (min-width: 800px) {
+@media (max-width: 1100px) {
   .slide {
-    flex: 0 0 calc(50% - 26.67px); /* Adjust for gap */
+      max-width: 40VW;
+       height: 60vh;
+    flex: 0 0 calc(50%); /* Adjust for gap */
   }
 }
 
 @media (max-width: 800px) {
   .slide {
-    flex: 0 0 calc(100% - 26.67px); /* Adjust for gap */
+    padding: 5%; 
+    max-width: 65VW;
+    flex: 0 0 calc(100%); /* Adjust for gap */
   }
 }
