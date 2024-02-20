@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  menu:boolean=false;
+  opmenu:boolean=true;
+  openmenu(){
+    this.menu=true;
+    this.opmenu=false;
+  }
+  closemenu(){
+    this.menu=false;
+    this.opmenu=true;
+  }
 }

@@ -1,12 +1,26 @@
 <header>
 <ul>
     <li><a href="#"><img src="assets/logo.png" alt="logo"></a></li>
-    <li>
+    <li id="desk">
         <ul class="menu" id="menu">
             <li id="hide"><a href="#wave">قوة التحليل الموجي</a></li>
             <li><a href="#faq">الأسئلة المتكررة</a></li>
             <li><a href="https://api.whatsapp.com/send?phone=212691074218" target="_blank" class="abb">إشترك الآن</a></li>
         </ul>
     </li>
+    <li id="mobile">
+        <svg (click)="openmenu()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </li>
 </ul>
 </header>
+
+<div id="menumobile" [class.active]="menu"  [class.desactive]="opmenu">
+    <div>
+        <span (click)="closemenu()">X</span>
+    </div>
+    <ul>
+        <li><a (click)="closemenu()" href="https://api.whatsapp.com/send?phone=212691074218" target="_blank">إشترك الآن</a></li>
+        <li><a (click)="closemenu()" href="#faq">الأسئلة المتكررة</a></li>
+        <li><a  (click)="closemenu()" href="#wave">قوة التحليل الموجي</a></li>
+    </ul>
+</div>
