@@ -7,7 +7,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0;
+    padding: 0 3%;
     overflow: hidden;
 }
 .img{
@@ -82,7 +82,7 @@ h1,h2,h3,h4{
 .button a{
     border: #CB9807 solid 2px;
     height: 40%;
-    width: 25%;
+    width: 30%;
     padding: 3% 2%;
     font-size: 24PX;
     border-radius: 10PX;
@@ -149,8 +149,8 @@ a{
         height: 100%;
     }
     .button a{
-        height: 60%;
-        width: 45%;
+        height: 50%;
+        width: 25%;
     }
   }
   @media (max-width: 650px) {
@@ -162,6 +162,10 @@ a{
     }
     h1{
         font-size: 20px;
+    }
+    .button a{
+        height: 60%;
+        width: 50%;
     }
   }
   @media (max-width: 500px) {
